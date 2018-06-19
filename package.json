@@ -4,7 +4,10 @@
   "description": "![cf](https://i.imgur.com/7v5ASc8.png) 12: Express Middleware ======",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/hjmendoza/12-express-middleware/issues"
   },
-  "homepage": "https://github.com/hjmendoza/12-express-middleware#readme"
+  "homepage": "https://github.com/hjmendoza/12-express-middleware#readme",
+  "dependencies": {
+    "babel-env": "^2.4.1",
+    "babel-eslint": "^8.2.3",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.19.1",
+    "jest": "^23.1.0"
+  }
 }
